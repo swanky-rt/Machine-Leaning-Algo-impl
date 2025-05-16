@@ -1,0 +1,63 @@
+Pseudo code calculation for Information gain in Decision Tree algo.
+
+1. Take the all the attributes of X in a list.
+2. Calculate the information gain for all attributes and decide it as a root node
+    How to calculate it:
+    Select all attributes and calculate the information gain which is probability of classifier o/p i.e. how many homogenous instances went
+    through the attribute as the o/p.
+    Here 14 is the total instances. for e.g: 9 is for yes and no is for no.
+    Pi = favourable outcome/total numbers of element
+    use formula : I(D) = −∑pi(log 2(pi ) Here i is from 1 to m
+    Information average = (Current instance/total instance * I(D) of current attribute) for all attributes
+    Calculate the attributeGain A(D) = I(D) − InfoA (D) A
+    Information gain = Calculate and compare every gains to finalize the attribute hierarchy.
+    Entropy of the original dataset:
+        • I(9/14, 5/14) = -9/14 log2(9/14) -5/14 log2(5/14) = 0.940 bits ( here 9 is yes and 5 is no for weather)
+        • Entropy of partitions resulting from testing Weather:
+        • Weather=Sunny
+        • I(2/5, 3/5) = -2/5 log2(2/5) -3/5 log2 (3/5) = 0.971 bits ( here 2 is yes and 3 is no for sunny)
+        • Weather=Overcast
+        • I(4/4, 0/4) = -4/4 log2(4/4) -0/4 log2 (0/4)= 0 bits ( here 4 is yes and 0 is no for Overcast)
+        • Weather=Rainy
+        • I(3/5, 2/5) = -3/5 log2(3/5) -2/5 log2 (2/5)= 0.971 bits ( here 3 is yes and 2 is no for rainy)
+        • Average entropy of the resulting partitions
+        • ( 5/14)x0.971 + (4/14)x0 + (5/14)x0.971 = 0.693 bits=3.
+    Let be the average entropy of the partitions resulting from splitting based onInfo A(D) =∑| Dj |/| D | I(Dj ) where j=1 to v
+    Let be the Information Gain resulting from splitting based on attributeGain A(D) = I(D) − InfoA (D) A
+
+
+A Decision Tree Learning algorithm
+
+    • Create a new node, N
+    Function: decision_tree( D, L)
+    Input: A dataset D =  = {(x1, y1), (x 2, y2 ) , ..., (xn , yn )} with n training instances.
+    A list, L , of attributes that can still be tested.
+        • Let be the best attribute to split the dataset // Select splitting attribute according to some criterionA D
+
+    // stopping criteria
+     * If all instances in belong to the same class,
+            Define node as a leaf node labeled with and return it D y N y
+    • If there are no more attributes that can be tested (i.e., if L = ∅)
+            Define node Nas a leaf node labeled with the majority class in D, and return it
+
+     • Let be the best attribute to split the dataset // Select splitting attribute according to some criterionA D
+     ( all the calculation above will be applied here)
+
+     • Define node as a decision node that tests attributeN A
+     • Remove from the list of attributes that can still be tested:A L := L − {A}
+
+      //Create sub trees.
+     • Let V be a list with all different values of attribute A considering the instances in dataset D
+     • For each attribute value :v ∈ V
+            • Let be the partition of containing all instances whose attributeDv D A = v
+            • If Dv is empty
+                Let Tv be a leaf node labeled with the majority class in D
+            • Else
+                Let be a sub-tree responsible for classifying the instances in : decision_tree( )Tv Dv Tv := Dv , L
+            • Create an edge from node to the root of , where the edge is labeled with attribute valueN Tv v
+
+     Return N
+
+
+
+

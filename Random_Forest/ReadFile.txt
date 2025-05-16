@@ -1,0 +1,24 @@
+To excute these 4 data sets please find the steps below:
+To run Loan dataset:
+1. Please change the file path here: filepath = '/../../Users/amitkumar/Documents/ML/HW3_CMPSCI_589_Spring2025_Supporting_Files/'
+Note: Do not add the filename as its already added separately.
+2. After making the change, please run the main method.
+3. Run the python file name as Random_forest_for_loan_dataset.py
+
+To run WDBC dataset:
+1. Please change the file path here: filepath = '/../../Users/amitkumar/Documents/ML/HW3_CMPSCI_589_Spring2025_Supporting_Files/'
+Note: Do not add the filename as its already added separately.
+2. After making the change, please run the main method.
+3. Run the python file name as Random_forest_for_wdbc_dataset.py
+
+To run Raisin dataset:
+1. Please change the file path here: filepath = '/../../Users/amitkumar/Documents/ML/HW3_CMPSCI_589_Spring2025_Supporting_Files/'
+Note: Do not add the filename as its already added separately.
+2. After making the change, please run the main method.
+3. Run the python file name as Random_forest_for_titanic_dataset.py
+
+To run Titanic dataset:
+1. Please change the file path here: filepath = '/../../Users/amitkumar/Documents/ML/HW3_CMPSCI_589_Spring2025_Supporting_Files/'
+Note: Do not add the filename as its already added separately.
+2. After making the change, please run the main method.
+3. Run the python file name as Random_forest_for_raisin_dataset.py

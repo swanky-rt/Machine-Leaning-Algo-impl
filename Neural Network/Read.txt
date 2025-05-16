@@ -1,0 +1,40 @@
+*To execute backprop example1.txt and backprop example2.txt
+
+1. Please run main method of Neural_network_for_loan.py as this file contains run_backprop_example1()
+    run_backprop_example2().
+
+To execute "The Loan Eligibility Prediction Dataset" :
+
+1. Please update the filename and location
+filename = 'loan.csv'
+filepath = '/../../Users/amitkumar/Documents/ML/HW4/datasets/'
+2. Execute the main of Neural_network_for_loan.py
+3. you can see the multiple output for different combination and the graph for the best architecture.
+
+*To execute "The Wisconsin Breast Cancer Diagnostic (WDBC) Dataset" :
+
+1. Please update the filename and location
+filename = 'wdbc.csv'
+filepath = '/../../Users/amitkumar/Documents/ML/HW4/datasets/'
+2. Execute the main of Neural_network_for_wdbc.py
+3. you can see the multiple output for different combination and the graph for the best architecture.
+
+*To execute "Titanic Dataset" :
+
+1. Please update the filename and location
+filename = 'titanic.csv'
+filepath = '/../../Users/amitkumar/Documents/ML/HW4/datasets/'
+2. Execute the main of Neural_network_for_titanic.py
+3. you can see the multiple output for different combination and the graph for the best architecture.
+
+*To execute "Raisins Dataset" :
+
+1. Please update the filename and location
+filename = 'raisin.csv'
+filepath = '/../../Users/amitkumar/Documents/ML/HW4/datasets/'
+2. Execute the main of Neural_network_for_raisins.py
+3. you can see the multiple output for different combination and the graph for the best architecture.
+
+* To execute the Extra Points #3:
+
+1. Please execute the main of file name Neural_network_Q7.py
